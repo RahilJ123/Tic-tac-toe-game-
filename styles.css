@@ -1,0 +1,98 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    
+  }
+
+  #score-board {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+
+  #board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    background-color: #fff;
+    border: 5px solid #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ccc;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .cell:hover {
+    background-color: #f0f0f0;
+  }
+
+  .winning-cell {
+    background-color: #aaffaa !important;
+  }
+
+  #message {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+
+  #reset-btn {
+    font-size: 1em;
+    padding: 8px;
+    margin-top: 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  #reset-btn:hover {
+    background-color: #2980b9;
+  }
+
+  #player-options {
+    margin-top: 20px;
+  }
+
+  #player-options button {
+    font-size: 1em;
+    padding: 8px 20px;
+    margin-right: 10px;
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  #player-options button:hover {
+    background-color: #27ae60;
+  }
+  h2{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 30px;
+
+  }
